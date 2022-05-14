@@ -17,12 +17,13 @@ fn main() {
     let _default_float = 3.0;
     let _default_integer = 7;
 
-    println!("The integer is {}", _an_int2);
-    println!("The integer is {}", _an_integer);
-
+    // Mutables
     let mut _mutable = 12; // i32
     _mutable = 21;
 
+
+    println!("The integer is {}", _an_int2);
+    println!("The integer is {}", _an_integer);
 
     println!("1 + 2 = {}", 1u32 + 2);
     println!("1 - 2 = {}", 1i32 - 2);
