@@ -1,0 +1,11 @@
+Have rust to show you stuff:
+cargo expand --bin <name of dir> --color=always --tests
+
+
+Use unused variables:
+#![allow(unused_variables)]
+
+
+Don't nag me about dead code:
+#![allow(dead_code)]
+
