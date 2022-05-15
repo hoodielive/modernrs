@@ -32,6 +32,18 @@ fn fun_como()
     println!("Location name: {}, latitude: {}, longitude: {}", name, latitude, longitude);
 }
 
+fn mutation_and_shihh()
+{
+    let mut name: &str = "Jon Doe";
+
+    println!("{}", name);
+}
+
+fn say_hello(name: &mut &str)
+{
+    println!("Hello {}", name);
+    *name = "Jane Doe";
+}
 fn primitives_() 
 {
     // 8-bit integers 
@@ -83,9 +95,11 @@ fn strice()
     println!("{}", airline_name);
 
     let mut slogan = String::new();
-    slogan.push_str("We hit the ground!");
+    slogan.push_str("We hit the ground!"); 
     slogan.push(' ');
 }
+
+
 
 #[derive(Debug)]
 struct Matrix(f32, f32, f32, f32);
@@ -94,4 +108,5 @@ struct Matrix(f32, f32, f32, f32);
 fn main() {
     materialize_stuff();
     primitives_();
+    strice();
 }
