@@ -26,12 +26,14 @@ fn new_function()
 }
 
 
-#[derive(Debug)]
-struct Matrix(f32, f32, f32, f32);
+fn primitives_() 
+{
+    // 8-bit integers 
+    // 2's compliment 
+    // Unsigned 8-bit binary (u)
+    // Signed 8-bit binary (i)
+    // -127 - 128
 
-
-fn main() {
-    materialize_stuff();
     let abool: bool = true;
     let a_float: f64 = 1.0;
     let an_integer = 5i32;
@@ -43,9 +45,8 @@ fn main() {
     let mut _mutable = 12; // i32
     _mutable = 21;
 
-
-    println!("The integer is {}", _an_int2);
-    println!("The integer is {}", _an_integer);
+    println!("The integer is {}", an_int2);
+    println!("The integer is {}", an_integer);
 
     println!("1 + 2 = {}", 1u32 + 2);
     println!("1 - 2 = {}", 1i32 - 2);
@@ -62,4 +63,14 @@ fn main() {
 
     // Use underscores to improve readability
     println!("1 Million is written as {}", 1_000_000u32);
+
+}
+
+#[derive(Debug)]
+struct Matrix(f32, f32, f32, f32);
+
+
+fn main() {
+    materialize_stuff();
+    primitives_();
 }
