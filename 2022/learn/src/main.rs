@@ -77,6 +77,14 @@ fn strice()
     let person_name_string: String = String::from("Osa");
     let person_name_slice: &String = &person_name_string;
     let person_name_slice2: &str = person_name_string.as_str();
+    let duck = "Duck";
+    let dog = "airlines";
+    let airline_name = format!("{}{}", duck, dog);
+    println!("{}", airline_name);
+
+    let mut slogan = String::new();
+    slogan.push_str("We hit the ground!");
+    slogan.push(' ');
 }
 
 #[derive(Debug)]
