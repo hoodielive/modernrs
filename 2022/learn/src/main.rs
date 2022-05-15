@@ -1,3 +1,6 @@
+#![allow(unused_variables)]
+#![allow(dead_code)]
+
 fn reverse(pair: (i32, bool)) -> (bool, i32) 
 {
     let (integer, boolean) = pair;
