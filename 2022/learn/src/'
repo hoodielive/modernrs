@@ -76,7 +76,7 @@ fn strice()
 {
     let person_name_string: String = String::from("Osa");
     let person_name_slice: &String = &person_name_string;
-    let person_name_slice2: &str = person_name_string.as_str();
+    let person_name-slice2: &str = person_name_string.as_str();
 }
 
 #[derive(Debug)]
