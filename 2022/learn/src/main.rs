@@ -1,24 +1,43 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
 
+// Functions.
+
 fn reverse(pair: (i32, bool)) -> (bool, i32) 
 {
     let (integer, boolean) = pair;
     (boolean, integer)
 }
 
+fn materialize_stuff() {
+    new_function();
+    show_off(21);
+}
+
+fn show_off(x: i32) -> i32 {
+    println!("Hello {}", x);
+    20
+}
+
+fn new_function()
+{
+    // println is a macro (segment of code that is given a name)
+    println!("Hello");
+}
+
+
 #[derive(Debug)]
 struct Matrix(f32, f32, f32, f32);
 
 
 fn main() {
-
-    let _abool: bool = true;
-    let _a_float: f64 = 1.0;
-    let _an_integer = 5i32;
-    let _an_int2: i32 = 5;
-    let _default_float = 3.0;
-    let _default_integer = 7;
+    materialize_stuff();
+    let abool: bool = true;
+    let a_float: f64 = 1.0;
+    let an_integer = 5i32;
+    let an_int2: i32 = 5;
+    let default_float = 3.0;
+    let default_integer = 7;
 
     // Mutables
     let mut _mutable = 12; // i32
