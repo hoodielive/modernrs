@@ -1,5 +1,6 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
+mod buildwithrust;
 
 // Functions.
 
@@ -109,4 +110,5 @@ fn main() {
     materialize_stuff();
     primitives_();
     strice();
+    buildwithrust::funfunfun();
 }
