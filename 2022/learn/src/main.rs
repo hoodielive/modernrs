@@ -1,6 +1,7 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
 mod buildwithrust;
+mod strings;
 
 // Functions.
 
@@ -111,4 +112,6 @@ fn main() {
     primitives_();
     strice();
     buildwithrust::funfunfun();
+    let greeting = strings::Greeting::new("Osa");
+    println!("Hallo!, {}", greeting.name);
 }
