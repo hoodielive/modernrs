@@ -1,5 +1,7 @@
 mod raiishih;
+mod doitagain;
 use crate::raiishih::my_mod::create_box;
+use crate::doitagain::reiterate_it;
 
 fn rust_move()
 {
@@ -53,4 +55,6 @@ fn main()
     {
         create_box();
     }
+
+    reiterate_it();
 }
