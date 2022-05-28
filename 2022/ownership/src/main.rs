@@ -1,7 +1,9 @@
 mod raiishih;
 mod doitagain;
+mod getbusywithownership;
 use crate::raiishih::my_mod::create_box;
 use crate::doitagain::reiterate_it;
+use crate::getbusywithownership::lockerkey;
 
 fn rust_move()
 {
@@ -57,4 +59,6 @@ fn main()
     }
 
     reiterate_it();
+    lockerkey();
 }
+
