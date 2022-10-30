@@ -1,6 +1,10 @@
+#![allow(unused_variables)]
+#![allow(unused_imports)]
+#![allow(dead_code)]
 
-fn build_vector() -> Vec<i16>
-{
+mod tuples;
+
+fn build_vector() -> Vec<i16> {
     let mut v = Vec::new();
     v.push(10);
     v.push(20);
@@ -9,4 +13,6 @@ fn build_vector() -> Vec<i16>
 
 fn main() {
     build_vector();
+
+    tuples::tuples();
 }
