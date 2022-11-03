@@ -114,4 +114,5 @@ fn main() {
     buildwithrust::funfunfun();
     let greeting = strings::Greeting::new("Osa");
     println!("Hallo!, {}", greeting.name);
+
 }
