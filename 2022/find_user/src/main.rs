@@ -2,6 +2,8 @@
 #![allow(unused_variables)]
 
 mod demo;
+mod _test;
+mod _demo;
 
 #[derive(Debug)]
 struct User
