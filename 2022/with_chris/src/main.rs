@@ -1,4 +1,5 @@
 #![allow(dead_code)]
+#![allow(unused_variables)]
 
 mod new_impl;
 
@@ -25,6 +26,7 @@ impl <T> Point<f32>
 }
 
 fn main() {
+
     let p = Point { x: 5, y: 10 };
     p.distance_from_origin();
 
@@ -39,8 +41,4 @@ fn main() {
     let p3 = p1.new_impl::mixup(p2);
 
     println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
-
-
-
-
 }
