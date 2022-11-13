@@ -1,0 +1,258 @@
+TARGET = Some("x86_64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-unknown-linux-gnu")
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/adler32.o" "-c" "libtcod/src/zlib/adler32.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/crc32.o" "-c" "libtcod/src/zlib/crc32.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/deflate.o" "-c" "libtcod/src/zlib/deflate.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/infback.o" "-c" "libtcod/src/zlib/infback.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/inffast.o" "-c" "libtcod/src/zlib/inffast.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/inflate.o" "-c" "libtcod/src/zlib/inflate.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/inftrees.o" "-c" "libtcod/src/zlib/inftrees.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/trees.o" "-c" "libtcod/src/zlib/trees.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/zutil.o" "-c" "libtcod/src/zlib/zutil.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/compress.o" "-c" "libtcod/src/zlib/compress.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/uncompr.o" "-c" "libtcod/src/zlib/uncompr.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzclose.o" "-c" "libtcod/src/zlib/gzclose.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzlib.o" "-c" "libtcod/src/zlib/gzlib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzread.o" "-c" "libtcod/src/zlib/gzread.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-w" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzwrite.o" "-c" "libtcod/src/zlib/gzwrite.c"
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-unknown-linux-gnu
+AR_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_unknown_linux_gnu
+AR_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+running: "ar" "cq" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libz.a" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/adler32.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/crc32.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/deflate.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/infback.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/inffast.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/inflate.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/inftrees.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/trees.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/zutil.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/compress.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/uncompr.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzclose.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzlib.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzread.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zlib/gzwrite.o"
+exit status: 0
+running: "ar" "s" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libz.a"
+exit status: 0
+cargo:rustc-link-lib=static=z
+cargo:rustc-link-search=native=/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out
+cargo:rerun-if-env-changed=SDL2_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=SDL2_STATIC
+cargo:rerun-if-env-changed=SDL2_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=SYSROOT
+cargo:rerun-if-env-changed=SDL2_STATIC
+cargo:rerun-if-env-changed=SDL2_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rustc-link-search=native=/usr/lib
+cargo:rustc-link-lib=SDL2
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=SDL2_STATIC
+cargo:rerun-if-env-changed=SDL2_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/bresenham_c.o" "-c" "libtcod/src/bresenham_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/bsp_c.o" "-c" "libtcod/src/bsp_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/color_c.o" "-c" "libtcod/src/color_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/console_c.o" "-c" "libtcod/src/console_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/console_rexpaint.o" "-c" "libtcod/src/console_rexpaint.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_c.o" "-c" "libtcod/src/fov_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_circular_raycasting.o" "-c" "libtcod/src/fov_circular_raycasting.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_diamond_raycasting.o" "-c" "libtcod/src/fov_diamond_raycasting.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_permissive2.o" "-c" "libtcod/src/fov_permissive2.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_recursive_shadowcasting.o" "-c" "libtcod/src/fov_recursive_shadowcasting.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_restrictive.o" "-c" "libtcod/src/fov_restrictive.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/heightmap_c.o" "-c" "libtcod/src/heightmap_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/image_c.o" "-c" "libtcod/src/image_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/lex_c.o" "-c" "libtcod/src/lex_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/list_c.o" "-c" "libtcod/src/list_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/mersenne_c.o" "-c" "libtcod/src/mersenne_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/namegen_c.o" "-c" "libtcod/src/namegen_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/noise_c.o" "-c" "libtcod/src/noise_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/parser_c.o" "-c" "libtcod/src/parser_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/path_c.o" "-c" "libtcod/src/path_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_c.o" "-c" "libtcod/src/sys_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl2_c.o" "-c" "libtcod/src/sys_sdl2_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_c.o" "-c" "libtcod/src/sys_sdl_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_img_bmp.o" "-c" "libtcod/src/sys_sdl_img_bmp.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_img_png.o" "-c" "libtcod/src/sys_sdl_img_png.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/tree_c.o" "-c" "libtcod/src/tree_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/txtfield_c.o" "-c" "libtcod/src/txtfield_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/wrappers.o" "-c" "libtcod/src/wrappers.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zip_c.o" "-c" "libtcod/src/zip_c.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-I" "/usr/include" "-I" "/usr/include/SDL2" "-I" "libtcod/include" "-I" "libtcod/src/zlib" "-Wall" "-Wextra" "-fno-strict-aliasing" "-ansi" "-w" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/png/lodepng.o" "-c" "libtcod/src/png/lodepng.c"
+exit status: 0
+running: "ar" "cq" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod.a" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/bresenham_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/bsp_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/color_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/console_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/console_rexpaint.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_circular_raycasting.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_diamond_raycasting.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_permissive2.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_recursive_shadowcasting.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_restrictive.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/heightmap_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/image_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/lex_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/list_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/mersenne_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/namegen_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/noise_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/parser_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/path_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl2_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_img_bmp.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_img_png.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/tree_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/txtfield_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/wrappers.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zip_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/png/lodepng.o"
+exit status: 0
+running: "ar" "s" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod.a"
+exit status: 0
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+Compiling: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-shared" "-Wl,-soname,libtcod.so" "-o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod.so" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/bresenham_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/bsp_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/color_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/console_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/console_rexpaint.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_circular_raycasting.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_diamond_raycasting.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_permissive2.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_recursive_shadowcasting.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/fov_restrictive.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/heightmap_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/image_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/lex_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/list_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/mersenne_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/namegen_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/noise_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/parser_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/path_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl2_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_img_bmp.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/sys_sdl_img_png.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/tree_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/txtfield_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/wrappers.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/zip_c.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libtcod/src/png/lodepng.o" "/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out/libz.a" "-lSDL2" "-lX11" "-lm" "-ldl" "-lpthread" "-DTCOD_SDL2" "-DNO_OPENGL" "-DNDEBUG"
+STDOUT: 
+STDERR: 
+cargo:rerun-if-env-changed=X11_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=X11_STATIC
+cargo:rerun-if-env-changed=X11_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=SYSROOT
+cargo:rerun-if-env-changed=X11_STATIC
+cargo:rerun-if-env-changed=X11_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rustc-link-search=native=/usr/lib
+cargo:rustc-link-lib=X11
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=X11_STATIC
+cargo:rerun-if-env-changed=X11_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rustc-link-search=/home/enilo/Clones/modernrs/2022/rougelike/target/debug/build/tcod-sys-ee380c34cf0d60b8/out
+cargo:rustc-link-lib=dylib=tcod
+cargo:rustc-link-lib=SDL2
