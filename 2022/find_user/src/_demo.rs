@@ -1,6 +1,3 @@
-
-
-
 #[derive(Debug, Eq, PartialEq)]
 enum Access
 {
@@ -17,6 +14,11 @@ fn maybe_access(name: &str) -> Option<Access>
         "gary"      => Some(Access::User),
         _           => None,
     }
+}
+
+fn prophecy(name: &str) -> Option<Access>
+{
+    Some(Access)
 }
 
 fn root() -> Option<Access>

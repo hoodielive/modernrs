@@ -1,10 +1,6 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
 
-mod demo;
-mod _test;
-mod _demo;
-
 #[derive(Debug)]
 struct User
 {
@@ -77,5 +73,5 @@ fn main()
         None       => println!("Your position is not found."),
     }
 
-    demo::demo();
+
 }
