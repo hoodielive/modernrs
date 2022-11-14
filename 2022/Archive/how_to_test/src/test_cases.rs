@@ -1,4 +1,4 @@
-fn clamp(n: i32, lower: i32, upper: i32) -> i32
+pub fn clamp(n: i32, lower: i32, upper: i32) -> i32
 {
     if n >= lower
     {
@@ -29,6 +29,7 @@ mod tests
 {
    use crate::*; 
 
+   #[test]
    fn clamp_lower() {
        let result = clamp(10, 100, 1000);
        let expected = 100;
