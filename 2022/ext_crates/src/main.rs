@@ -4,7 +4,6 @@ use std::time::Duration;
 #[allow(unused_imports)]
 use chrono::prelude::*;
 
-
 fn main()
 {
     let d = Duration::from_secs(9876);
