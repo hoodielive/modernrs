@@ -1,3 +1,4 @@
+
 fn main() {
     let spaces = "        ";
 
@@ -12,4 +13,7 @@ fn main() {
     let guess: u32 = "42".parse().expect("Whhhhhaaaaaa????");
 
     println!("Guess is: {guess}");
+
+    let overflow_var: u16 = 257;
+    println!("{}", overflow_var);
 }
