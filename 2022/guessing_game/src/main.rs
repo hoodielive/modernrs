@@ -4,15 +4,15 @@ use rand::Rng;
 
 fn main() {
     println!("Please guess the number.");
-    println!("Please enter your guess: ");
 
-    let secret_number = rand::
-        thread_rng().gen_range(1, 101);
+    let secret_number: i32 = rand::thread_rng().gen_range(1, 101);
 
     println!("The secret number is: {}", secret_number);
+    println!("Please enter your guess: ");
+
     let mut guess = String::new();
 
-    std::io::stdin()
+    io::stdin()
         .read_line(&mut guess)
         .expect("Failed to read line.");
 
