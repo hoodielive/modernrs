@@ -1,7 +1,8 @@
-use std::io;
-use std::cmp::Ordering;
 use rand::Rng;
+use std::cmp::Ordering;
+use std::io;
 
+<<<<<<< HEAD
 fn main() {
     println!("Please guess the number.");
 
@@ -25,3 +26,6 @@ fn main() {
         Ordering::Equal => println!("You win!"),
     }
 }
+=======
+fn main() {}
+>>>>>>> 8cf221c4472f8868c9d13e389aa960b44135d7c2
