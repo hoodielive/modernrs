@@ -32,12 +32,19 @@ impl Overview for Course
     }
 }
 
-
 impl Overview for AnotherCourse
 {
     fn overview(&self) -> String
     {
         format!("{} {}", self.author, self.headline)
+    }
+}
+
+impl Drop for Course
+{
+    fn drop(&mut self)
+    {
+        println!("Dropping: {}", self.author)
     }
 }
 
@@ -63,6 +70,8 @@ fn main()
 
     call_overview(&course_01);
     call_overview_simplified(&course_02);
+
+//    drop(course_01);
 }
 
 fn call_overview(item: &impl Overview)
@@ -74,8 +83,3 @@ fn call_overview_simplified<T: Overview>(item: &T)
 {
     println!("Overview: {}", item.overview())
 }
-
-fn overview_02(item1: &impl Overview, item2: &impl Overview) {};
-fn overview_03<T: Overview>(item1: &T, item2: &T) {};
-fn overview_04(item1: &impl Overview + AnotherTrait) {};
-fn overview_05<T: Overview + AnotherTrait>(item1: &T, item2: &T) {};
