@@ -7,6 +7,6 @@ edition = "2021"
 
 [lib]
 name = "modad"
-path = "lib/modad.rs"
+path = "src/modad.rs"
 
 [dependencies]

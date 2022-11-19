@@ -3,15 +3,16 @@
 #![allow(unused_imports)]
 
 
-fn main() {
-    use modad::mathematics::*;
-    use modad::messaging::*;
+use modad::mathematics::*;
+use modad::messaging::*;
 
+fn main() {
     // Part 1: math functions
+ 
     let result = {
-        let two_plus_two = mathematics::add(2, 2);
-        let three = mathematics::sub(two_plus_two, 1);
-        mathematics::mul(three, three)
+        let two_plus_two = add(2, 2);
+        let three = sub(two_plus_two, 1);
+        mul(three, three)
     };
 
     // Ensure we have a correct result.
@@ -21,12 +22,12 @@ fn main() {
     // Part 2: string functions
     let hello = {
         let msg = "hello ";
-        let msg = messaging::trim(msg);
-        messaging::capitalize(msg)
+        let msg = trim(msg);
+        capitalize(msg)
     };
     let world = {
         let msg = "world";
-        messaging::exciting(msg)
+        exciting(msg)
     };
     let msg = format!("{}, {}", hello, world);
 
