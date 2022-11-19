@@ -71,6 +71,7 @@ fn main()
     call_overview(&course_01);
     call_overview_simplified(&course_02);
 
+    return_overview(4);
 //    drop(course_01);
 }
 
@@ -82,4 +83,9 @@ fn call_overview(item: &impl Overview)
 fn call_overview_simplified<T: Overview>(item: &T)
 {
     println!("Overview: {}", item.overview())
+}
+
+fn return_overview<T: Overview>(item: &T) -> &T
+{
+    item    
 }
