@@ -1,4 +1,5 @@
 use std::io;
+mod ara;
 
 fn main() {
     let a: [i32; 5] = [1, 2, 3, 4, 5];
@@ -16,4 +17,9 @@ fn main() {
     let element = a[index];
 
     println!("The value of element is {element}");
+
+    let home = ara::IpAddr::V4(127, 0, 0, 1);
+    let loopback = ara::IpAddr::V6(String::from("::1"));
+
+    println!("{:?}, is the local host address.", home);
 }
