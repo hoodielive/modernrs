@@ -22,9 +22,20 @@ fn main()
      None => println!("There is no third element."),
    }
 
-   let ve = vec![1, 2, 3, 4, 5];
+   let mut ve = vec![1, 2, 3, 4, 5];
 //   let does_not_exist = &ve[100]; // will generate error - use &ve.get(100) instead.
    let does_not_exist = &ve.get(100);
 
    println!("Does it exist? {:?}", does_not_exist);
+
+   for i in &ve
+   {
+     println!("{}", i);
+   }
+
+   for x in &mut ve
+   {
+     *x += 50;
+     println!("{}", x);
+   }
 }
