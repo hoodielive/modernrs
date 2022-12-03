@@ -1,6 +1,13 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
 
+enum SpreadsheetCell
+{
+  Int(i32),
+  Float(f64),
+  Text(String),
+}
+
 fn main()
 {
    let mut v: Vec<i32> = Vec::new();
@@ -38,4 +45,10 @@ fn main()
      *x += 50;
      println!("{}", x);
    }
+
+   let row = vec![
+     SpreadsheetCell::Int(3),
+     SpreadsheetCell::Text(String::from("blue")),
+     SpreadsheetCell::Float(10.12),
+   ];
 }
