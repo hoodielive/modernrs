@@ -17,7 +17,8 @@ fn main()
    {
        match get_input()
        {
-           Ok(words) => {
+           Ok(words) => 
+           {
               all_input.push(words);
               times_input += 1;
            }
