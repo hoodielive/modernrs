@@ -29,4 +29,14 @@ fn main()
     println!("{:?} is in the map.", map);
     println!("{:?} is in the map.", &field_name);
 
+    let text = "hello world wonderful world";
+    let mut mapper = HashMap::new();
+
+    for word in text.split_whitespace()
+    {
+        let count = mapper.entry(word).or_insert(0);
+        *count += 1;
+    }
+
+    println!("{:?}", mapper);
 }
