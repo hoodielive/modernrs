@@ -1,6 +1,5 @@
 #![allow(dead_code)]
 
-
 struct Point<T>
 {
     x: T,
