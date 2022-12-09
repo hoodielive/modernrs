@@ -1,12 +1,22 @@
 #![allow(dead_code)]
 
-fn largest_generic<T>(list: &[T]) -> &T
+
+struct Point<T>
+{
+    x: T,
+    y: T,
+}
+
+fn largest_generic<T: std::cmp::PartialOrd>(list: &[T]) -> &T
 {
     let mut largest = &list[0];
 
     for item in list
     {
-        largest = item;
+        if item > largest
+        {
+            largest = item;
+        }
     }
 
     largest
