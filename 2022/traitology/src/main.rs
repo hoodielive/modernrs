@@ -12,6 +12,15 @@ pub struct NewsArticle
 
 pub trait Summary
 {
+    fn summarize_author(&self) -> String;
+    fn summarize(&self) -> String
+    {
+        format!("(Read more from {}...)", self.summarize_author())
+    }
+}
+
+pub trait SummaryAll
+{
     fn summarize(&self) -> String;
 }
 
@@ -50,6 +59,20 @@ impl Summary for Tweet
     }
 }
 
+pub struct Prophecy
+{
+    threemonthfromnow: String,
+}
+
+
+impl SummaryAll for Prophecy
+{
+   fn summarize(&self) -> String
+   {
+       format!("{} ", self.threemonthfromnow)
+   }
+}
+
 fn main()
 {
     let tweet = Tweet
@@ -61,4 +84,11 @@ fn main()
     };
 
     println!("1 new tweet: {}", tweet.summarize());
+
+    let prophecy01 = Prophecy
+    {
+        threemonthfromnow: String::from("You are about to be wealthy."),
+    };
+
+    println!("The future says: {}", prophecy01.summarize());
 }
