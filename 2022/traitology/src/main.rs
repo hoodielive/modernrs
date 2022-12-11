@@ -59,11 +59,6 @@ impl Summary for Tweet
     }
 }
 
-pub fn notify<T: Summary>(item: &T)
-{
-    println!("Breaking news! {}", item.summarize());
-}
-
 pub struct Prophecy
 {
     threemonthfromnow: String,
@@ -75,6 +70,52 @@ impl SummaryAll for Prophecy
    {
        format!("{} ", self.threemonthfromnow)
    }
+}
+
+pub fn notify<T: Summary>(item: &T)
+{
+    println!("Breaking news! {}", item.summarize());
+}
+
+fn returns_summarizable() -> impl Summary
+{
+    Tweet
+    {
+        username: String::from("horse_ebooks"),
+        content: String::from("Of course, as you probably already know."),
+        reply: false,
+        retweet: false,
+    }
+}
+
+use std::fmt::Display;
+struct Pair<T>
+{
+    x: T,
+    y: T,
+}
+
+impl<T> Pair<T>
+{
+    fn new(x: T, y: T) -> Self
+    {
+        Self { x, y }
+    }
+}
+
+impl<T: Display + PartialOrd> Pair<T>
+{
+    fn cmp_display(&self)
+    {
+        if self.x >= self.y
+        {
+            println!("The Largest member is x = {}", self.x)
+        }
+        else
+        {
+            println!("The Largest member is y = {}", self.y)
+        }
+    }
 }
 
 fn main()
@@ -95,4 +136,9 @@ fn main()
     };
 
     println!("The future says: {}", prophecy01.summarize());
+
+    let s = 3.to_string();
+
+    println!("Printed s = {}", &s);
+    print_type_of(&s);
 }
