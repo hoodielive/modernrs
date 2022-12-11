@@ -2,6 +2,11 @@
 #![allow(unused_variables)]
 
 
+pub fn print_type_of<T>(_: &T)
+{
+    println!("{}", std::any::type_name::<T>())
+}
+
 pub struct NewsArticle
 {
     pub headline: String,
@@ -26,7 +31,7 @@ pub trait SummaryAll
 
 impl Summary for NewsArticle
 {
-    fn summarize(&self) -> String
+    fn summarize_author(&self) -> String
     {
         format!
         (
@@ -48,22 +53,21 @@ pub struct Tweet
 
 impl Summary for Tweet
 {
-    fn summarize(&self) -> String
+    fn summarize_author(&self) -> String
     {
-        format!
-        (
-            "{}: {}",
-            self.username,
-            self.content
-        )
+        format!("@{}", self.username)
     }
+}
+
+pub fn notify<T: Summary>(item: &T)
+{
+    println!("Breaking news! {}", item.summarize());
 }
 
 pub struct Prophecy
 {
     threemonthfromnow: String,
 }
-
 
 impl SummaryAll for Prophecy
 {
