@@ -1,9 +1,15 @@
 #![allow(dead_code)]
+#![allow(unusued_variables)]
 
 struct Point<T>
 {
     x: T,
     y: T,
+}
+
+fn take_over<T: std::cmp::PartialOrd>(list: &[T]) -> &T
+{
+    &T
 }
 
 fn largest_generic<T: std::cmp::PartialOrd>(list: &[T]) -> &T
