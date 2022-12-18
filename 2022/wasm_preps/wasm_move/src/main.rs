@@ -16,6 +16,9 @@ struct Person
     id: PersonID,
 }
 
+// Unit Struct
+struct Animal(String, u32, String);
+
 impl Person 
 {
     // Associated function.
@@ -60,10 +63,23 @@ fn main()
     check_person_id(person.id);
     check_person_id(person_2.id);
     
+    let animal = Animal("dog".to_string(), 10, "bulldog".to_string());
+    let animal2 = Animal(String::from("cat"), 13, String::from("Simese"));
+    let Animal(animal_type, animal_num, animal_name) = animal2;
+    println!("{} {} {}", animal_type, animal_num, animal_name);
 }
 
 fn check_person_id(id: PersonID)
 {
+    if let PersonID::IdCard(num) = id
+    {
+       println!("It is matching id {}", num);
+    }
+    else
+    {
+        println!("It doesn't match!");
+    }
+        
     match id
     {
         PersonID::IdCard(x) =>
@@ -74,5 +90,5 @@ fn check_person_id(id: PersonID)
             println!("Passport first value - {}", x)
         },
         
-    }
+    };
 }
