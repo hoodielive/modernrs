@@ -1,6 +1,11 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
 
+trait Log
+{
+    fn display_info(&self);
+}
+
 #[derive(Debug)]
 enum PersonID
 {
@@ -18,6 +23,15 @@ struct Person
 
 // Unit Struct
 struct Animal(String, u32, String);
+
+
+impl Log for Person 
+{
+    fn display_info(&self)
+    {
+      println!("{}{}{}{:?}", self.name, self.last_name, self.age, self.id)
+    }
+}
 
 impl Person 
 {
@@ -89,6 +103,16 @@ fn check_person_id(id: PersonID)
         PersonID::Passport(x, y, z) => {
             println!("Passport first value - {}", x)
         },
-        
     };
+}
+
+// Trait narrowing
+fn logger(val: impl Log)
+{
+    val.display_info();
+}
+
+fn logger_2(val: &dyn Log)
+{
+    val.display_info();
 }
