@@ -7,7 +7,6 @@ enum PersonID
 {
     Passport, 
     IdCard,
-    
 }
 
 struct Person
