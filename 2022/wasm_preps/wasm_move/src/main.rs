@@ -1,7 +1,6 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
 
-
 #[derive(Debug)]
 enum PersonID
 {
@@ -57,6 +56,9 @@ fn main()
         32,
         PersonID::IdCard(44),
     ); 
+
+    check_person_id(person.id);
+    check_person_id(person_2.id);
     
 }
 
