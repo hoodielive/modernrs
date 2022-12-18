@@ -5,8 +5,8 @@
 #[derive(Debug)]
 enum PersonID
 {
-    Passport, 
-    IdCard,
+    Passport(u32, u32, u32), 
+    IdCard(u32),
 }
 
 struct Person
@@ -27,7 +27,7 @@ impl Person
             name: "Default".to_string(),
             last_name: "Default".to_string(),
             age: 0,
-            id: PersonID::IdCard,
+            id: PersonID::IdCard(0),
         }
     }
 
@@ -41,6 +41,11 @@ impl Person
             id,
         }
     }
+
+    fn display_info(&self)
+    {
+        println!("{}{}{}{:?}", self.name, self.last_name, self.age, self.id)
+    }
 }
 
 fn main() 
@@ -50,8 +55,22 @@ fn main()
         String::from("Law"),
         String::from("Osa"),
         32,
-        PersonID::IdCard,
+        PersonID::IdCard(44),
     ); 
     
 }
 
+fn check_person_id(id: PersonID)
+{
+    match id
+    {
+        PersonID::IdCard(x) =>
+        {
+            println!("ID card: first value - {}", x)
+        },
+        PersonID::Passport(x, y, z) => {
+            println!("Passport first value - {}", x)
+        },
+        
+    }
+}
