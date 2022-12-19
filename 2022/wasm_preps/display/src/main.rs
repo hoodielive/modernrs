@@ -1,11 +1,29 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
 
-#[derive(Debug)]
+use core::fmt;
+
 enum PersonId
 {
     Passport(u32),
     IdCard(u32),
+}
+
+impl fmt::Display for PersonId
+{
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result
+    {
+        match self
+        {
+            PersonId::Passport(x) => {
+                write!(f, "{}", x)
+            },
+            
+            PersonId::IdCard(x) => {
+                write!(f, "{}", x)
+            }
+        }
+    }
 }
 
 struct Person
@@ -28,7 +46,7 @@ impl Person
 
     fn display_info(&self)
     {
-        println!("{}{} with ID {:?}. You are granted permission to enter the building.", self.fname, self.lname, self.id,)
+        println!("{}{} with ID {}. You are granted permission to enter the building.", &self.fname, &self.lname, &self.id,)
     }
 }
 
