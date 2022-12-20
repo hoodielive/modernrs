@@ -33,6 +33,12 @@ struct Person
     id: PersonId,
 }
 
+struct Animal
+{
+    type_of: String,
+    age: u32,
+}
+
 impl Person 
 {
     fn new() -> Person
@@ -44,6 +50,27 @@ impl Person
         }
     }
 
+    fn display_info(&self)
+    {
+        println!("{}{} with ID {}. You are granted permission to enter the building.", &self.fname, &self.lname, &self.id,)
+    }
+}
+
+impl Animal 
+{
+    fn new() -> Animal
+    {
+        Animal 
+        {
+            type_of: "Default".to_string(),
+            age: 0,
+        }
+    }
+
+}
+
+trait DisplayInfo
+{
     fn display_info(&self)
     {
         println!("{}{} with ID {}. You are granted permission to enter the building.", &self.fname, &self.lname, &self.id,)
