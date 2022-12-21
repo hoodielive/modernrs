@@ -1,7 +1,29 @@
+struct Fruit
+{
+    apples: i32,
+    bananas: i32,
+}
+
+impl Fruit
+{
+    fn price(self) -> i32
+    {
+        self.apples * 8 + self.bananas * 12
+    }
+
+    fn new_fruit() -> Fruit
+    {
+        Fruit 
+        {
+            apples: 10,
+            bananas: 5,
+        }
+    }
+}
+
 fn main() 
 {
-    let x: () = ();
-    let y: () = println!("Hello, World!");
-    assert_eq!(x, y);
-    println!("All units are the same!");
+   let fruit = Fruit::new_fruit();
+   let price = fruit.price();
+   println!("Price is {}", price);
 }
