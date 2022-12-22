@@ -44,10 +44,13 @@ fn main()
 
    let x = 5;
 
-   let _fruit32: Fruit<u32> = Fruit
+   let fruitu32: Fruity<u32> = Fruity
    {
        apples: 5_u32,
        bananas: 10_u32,
    };
+
+   let fruitu64: Fruity<i 
+
    
 }
