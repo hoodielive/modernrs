@@ -1,6 +1,28 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
 
+struct Person<Name, Age>
+{
+    name: Name,
+    age: Age,
+}
+
+impl Person<String, u32>
+{
+    fn new(self) -> Person<String, u32>
+    {
+        Person {
+            name: "Default".to_owned(),
+            age: 0,
+        }
+    }
+
+    fn greet(person: &Person<String, f64>)
+    {
+        println!("Hello, {}", person.name);
+    }
+}
+
 struct Fruit
 {
     apples: u32,
@@ -61,4 +83,15 @@ fn main()
        apples: "apples".to_owned(),
        bananas: "bananas".to_owned(),
    };
+
+   let osa: Person<String, u32> = Person
+   {
+       name: "Osa Oso".to_owned(),
+       age: 900000_u32,
+   };
+   
+   println!("Could you tell me a little more {}. And is your number {}?", osa.name, osa.age);
+    
+   let person: Person<String, u32> = new Person::<Name, Age>();
+   
 }
