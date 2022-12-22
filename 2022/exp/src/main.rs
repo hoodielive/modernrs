@@ -56,5 +56,9 @@ fn main()
        bananas: 8.3_f64,
    };
 
-   
+   let fruitstring: Fruity<String> = Fruity
+   {
+       apples: "apples".to_owned(),
+       bananas: "bananas".to_owned(),
+   };
 }
