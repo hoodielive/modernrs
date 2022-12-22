@@ -50,7 +50,11 @@ fn main()
        bananas: 10_u32,
    };
 
-   let fruitu64: Fruity<i 
+   let fruitu64: Fruity<f64> = Fruity
+   {
+       apples: 6.4_f64,
+       bananas: 8.3_f64,
+   };
 
    
 }
