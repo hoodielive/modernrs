@@ -9,7 +9,7 @@ struct Person<Name, Age>
 
 impl Person<String, u32>
 {
-    fn new(self) -> Person<String, u32>
+    fn new() -> Person<String, u32>
     {
         Person {
             name: "Default".to_owned(),
@@ -92,6 +92,6 @@ fn main()
    
    println!("Could you tell me a little more {}. And is your number {}?", osa.name, osa.age);
     
-   let person: Person<String, u32> = new Person::<Name, Age>();
+   let person = Person::new();
    
 }
