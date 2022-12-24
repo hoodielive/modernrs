@@ -10,25 +10,31 @@ enum Directions
     South,
 }
 
-#[derive(Debug)]
-enum TheOdus
+enum Orientations
 {
-    Ogbe,
-    Oyeku,
-    Iwori,
-    Idi,
-    Irosun,
-    Owonrin,
-    Obara,
-    Okanran,
-    Ogunda,
-    Osa,
-    Ika,
-    Oturupon,
-    Otura,
-    Irete,
-    Ose,
-    Ofun,
+    Masculine,
+    Feminine,
+}
+
+#[derive(Debug)]
+struct TheOdus
+{
+    ogbe: String,
+    oyeku: String,
+    iwori: String,
+    idi: String,
+    irosun: String,
+    owonrin: String,
+    obara: String,
+    okanran: String,
+    ogunda: String,
+    osa: String,
+    ika: String,
+    oturupon: String,
+    otura: String,
+    irete: String,
+    ose: String,
+    ofun: String,
 }
 
 #[derive(Debug)]
@@ -62,28 +68,27 @@ impl Odus
     fn display_the_odu(the_odu: TheOdus) -> TheOdus
     {
         TheOdus {
-            Ogbe,
-            Oyeku,
-            Iwori,
-            Idi,
-            Irosun,
-            Owonrin,
-            Obara,
-            Okanran,
-            Ogunda,
-            Osa,
-            Ika,
-            Oturupon,
-            Otura,
-            Irete,
-            Ose,
-            Ofun,
-        };
-
-        TheOdus
+            ogbe: "ogbe".to_string(),
+            oyeku: "oyeku".to_string(),
+            iwori: "iwori".to_string(),
+            idi: "idi".to_string(),
+            irosun: "irosun".to_string(),
+            owonrin: "owonrin".to_string(),
+            obara: "obara".to_string(),
+            okanran: "okanran".to_string(),
+            ogunda: "ogunda".to_string(),
+            osa: "osa".to_string(),
+            ika: "ika".to_string(),
+            oturupon: "oturupon".to_string(),
+            otura: "otura".to_string(),
+            irete: "irete".to_string(),
+            ose: "ose".to_string(),
+            ofun: "ofun".to_string(),
+        }
     }
     
 }
+
 fn main() 
 {
     let primary_odu = Odus::new();
