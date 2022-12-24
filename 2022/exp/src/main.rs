@@ -9,6 +9,7 @@ struct Person<Name, Age>
 
 impl Person<String, u32>
 {
+    
     fn new() -> Person<String, u32>
     {
         Person {
