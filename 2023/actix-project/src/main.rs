@@ -1,3 +1,7 @@
+#[allow(unused_imports)]
+#[allow(dead_code)]
+#[allow(unused_variables)]
+
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
 
 struct AppState
@@ -23,12 +27,7 @@ async fn main() -> std::io::Result<()>
                         app_name: String::from("Oyeku Meji is in the building!"),
                     }
                 )
-            )
-            .service(index)
-            .service(hello)
-            .service(echo)
-            .route("/hey", web::get().to(manual_hello))
-            .route("/index.html", web::get().to(index3))
+            ).service(index)
     })
     .bind(("127.0.0.1", 8080))?
     .run()
