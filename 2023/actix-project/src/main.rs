@@ -1,9 +1,20 @@
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
 
-#[get("/")]
-async fn hello() -> impl Responder
+struct AppState
 {
-    HttpResponse::Ok().body("Howdy!")
+    app_name: String,
+}
+
+async fn index() -> impl Responder
+{
+    "Oyeku says Hello!"
+}
+
+#[get("/")]
+async fn index(data: web::Data<AppState>) -> impl String
+{
+    let app_name = &data.app_name;
+    format!("Hello {app_name}!")
 }
 
 #[post("/echo")]
@@ -25,6 +36,7 @@ async fn main() -> std::io::Result<()>
             .service(hello)
             .service(echo)
             .route("/hey", web::get().to(manual_hello))
+            .route("/index.html", web::get().to(index))
     })
     .bind(("127.0.0.1", 8080))?
     .run()
