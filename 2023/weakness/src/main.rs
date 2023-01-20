@@ -8,10 +8,15 @@ struct Odu
     numbers: i32
 }
 
+impl Odu {
+    new() -> &Odu;
+}
 
 fn main()
 {
-    let odu_ifa: Odu = new Odu {
+    let odu_ifa: Odu = Odu::new;
+
+    {
        odu: "Oyeku Meji",
        direction: "West",
        numbers: 2
