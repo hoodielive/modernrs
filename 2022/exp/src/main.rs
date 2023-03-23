@@ -92,6 +92,6 @@ fn main()
    
    println!("Could you tell me a little more {}. And is your number {}?", osa.name, osa.age);
     
-   let person: Person<String, u32> = new Person::<Name, Age>();
+   let person: Person<String, u32> = new Person<String, u32>();
    
 }
