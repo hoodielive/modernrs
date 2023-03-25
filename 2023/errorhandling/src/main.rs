@@ -1,21 +1,33 @@
-fn divide(x: i32, y: i32) -> Result<i32, String>
+trait Printable 
 {
-    if y == 0 
+    fn print(&self);
+}
+
+impl Printable for i32
+{
+    fn print(&self)
     {
-        Err("cannot divide by zero".to_string())
-    } 
-    else 
-    {
-        Ok(x/y)
+        println!("You will return an int32: {} ", *self);
     }
 }
+
+impl Printable for String 
+{
+    fn print(&self)
+    {
+        println!("You will return a String called: {} ", *self);
+    }
+}
+
+fn print_stuff<T: Printable>(item: T)
+{
+    item.print();
+}
+
 fn main()
 {
-    let result = divide(10, 2);
-
-    match result 
-    {
-        Ok(value) => println!("Result: {}", value),
-        Err(error) => println!("Error: {}", error),
-    }
+    let a = 42;
+    let b = "helllllooooo".to_string();
+    print_stuff(a);
+    print_stuff(b);
 }
