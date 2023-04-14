@@ -24,9 +24,27 @@ fn print_item<T: Printable>(item: T)
     item.print();
 }
 
+struct Mainer
+{
+    insta: String,
+    virtpost: i32,
+}
+
+impl Mainer
+{
+    fn constructor(&self)
+    {
+        println!("go public {} ", *self);
+    }
+}
+
+fn showConstructor<T: Mainer>(val: String) 
+{
+    val.constructor();
+}
+
 fn main()
 {
-    
     let a = 42;
     let b = "howdy".to_string();
 
