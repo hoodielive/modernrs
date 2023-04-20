@@ -93,6 +93,10 @@ fn main()
    
    println!("Could you tell me a little more {}. And is your number {}?", osa.name, osa.age);
     
+<<<<<<< HEAD
+   let person: Person<String, u32> = new Person<String, u32>();
+=======
    let person = Person::new();
+>>>>>>> e8b1ec7d41811801acb3bffafc1471a679fc8cf9
    
 }
