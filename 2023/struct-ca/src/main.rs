@@ -5,6 +5,7 @@ pub struct GrayscaleMap
     pub size: (usize, usize),
 }
 
+#[allow(dead_code)]
 struct Broom
 {
     name: String,
