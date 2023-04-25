@@ -1,3 +1,4 @@
+#[allow(unused_variables)]
 #[allow(dead_code)]
 pub struct GrayscaleMap
 {
@@ -15,6 +16,7 @@ struct Broom
     intent: BroomIntent,
 }
 
+#[allow(dead_code)]
 #[derive(Copy, Clone)]
 enum BroomIntent { FetchWater, DumpWater }
 
@@ -24,7 +26,7 @@ fn main()
     let height = 576;
     let image = GrayscaleMap {
         pixels: vec![0; width * height],
-        size: (width, height)
+        size: (width, height))
     };
 
     assert_eq!(image.size, (1024, 576));
@@ -38,10 +40,12 @@ fn main()
         intent: BroomIntent::FetchWater,
     };
 
+    #[allow(unused_variables)]
     let (hokey1, hokey2) = chop(hokey);
     assert_eq!(hokey1.name, "Hokey I");
 }
 
+#[allow(dead_code)]
 fn new_map(size: (usize, usize), pixels: Vec<u8>) -> GrayscaleMap
 {
     assert_eq!(pixels.len(), size.0 * size.1);
@@ -55,6 +59,5 @@ fn chop(b: Broom) -> (Broom, Broom)
 
     broom1.name.push_str(" I");
     broom2.name.push_str(" II");
-
     (broom1, broom2)
 }
