@@ -9,7 +9,8 @@ enum Paths {
     Islam(String, String),
 }
 
-fn main() {
+fn main() 
+{
     let path = vec![
         Paths::Buddhism(String::from("Japan"), String::from("Dogen")),
         Paths::Christianity(String::from("Eastern"), String::from("Gnosticism")),
