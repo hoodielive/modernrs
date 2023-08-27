@@ -8,21 +8,22 @@ struct Odu
     numbers: i32
 }
 
-impl Odu {
-    new() -> &Odu;
+impl Odu 
+{
+    fn new() -> &Odu;
 }
 
 fn main()
 {
     let odu_ifa: Odu = Odu::new;
-
+    
     {
        odu: "Oyeku Meji",
        direction: "West",
        numbers: 2
     };
 
-    printf("This is the odu {:?}", odu_ifa.odu);
+    println!("This is the odu {:?}", odu_ifa.odu);
 
     
 }
