@@ -1,19 +1,23 @@
 // Use generics.
 // Generics are abstract stand-ins for concrete types or other properties.
 
-fn main() 
+fn largest(list: &[i32]) -> &i32 
 {
-
-    let number_list = vec![34, 50, 25, 100, 65];
-    let mut largest = &number_list[0];
-
-    for number in &number_list 
+    let mut largest = &list[0];
+    
+    for item in list
     {
-        if number > largest 
+        if item > largest 
         {
-            largest = number;
+            largest = item;
         }
     }
+    largest
+}
 
-    println!("The largest number is {}", largest);
+fn main() 
+{
+    let number_list = vec![34, 50, 25, 100, 65];
+    let result = largest(&number_list);
+    println!("The largest number is {}", result);
 }
