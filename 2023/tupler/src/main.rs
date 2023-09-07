@@ -12,9 +12,9 @@ pub struct Magnify {
 
 impl Magnify {
     fn new(self) {
-        self.gender;
-        self.age;
-        self.name;
+        self._gender;
+        self._age;
+        self._name;
     }
 }
 
