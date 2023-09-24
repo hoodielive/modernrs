@@ -1,6 +1,6 @@
 extern crate serde;
 #[macro_use]
-extern create serde_derive;
+extern crate serde_derive;
 use std::io::prelude::*;
 use std::io::BufReader;
 use std::path::Path;
@@ -55,18 +55,35 @@ impl BostonHousing {
            black: f64_formatted[11],
            lstat: f64_formatted[12],
            medv: f64_formatted[13],
-        }
+        };
 
         pub fn into_feature_vector(&self) -> Vec<f64> {
             vec![self.crim, self.zn, self.indus, self.chas, self.nox,
                  self.rm, self.age, self.dis, self.rad, self.tax, self.ptratio,
                  self.black, self.lstat]
-        }
+        };
 
         pub fn into_targets(&self) -> f64 {
             self.medv
-        }
+        };
     }
+}
+
+
+fn get_boston_record(s: String) -> BostonHousing {
+    let v: Vec<&str> = s.split_whitespace().collect();
+    let b: BostonHousing = BostonHousing::new(v);
+    b
+}
+
+fn get_boston_records_from_file(fl: impl AsRef<Path>) -> Vec<BostonHousing> {
+    let file = File::open(fl).expect("No such file.");
+    let buf = BufReader::new(file);
+    buf.lines().enumerate()
+        .map(|(n, l)| l.expect(
+            &format!("Could not parse line no {}.", n))) 
+        .map(|r| get_boston_record(r))
+        .collect()
 }
 
 fn main() {
