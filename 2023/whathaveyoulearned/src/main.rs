@@ -11,7 +11,7 @@ impl Player {
 
 fn main()
 {
-    let player1: Player = Player::new(&self);
+    let player1: Player = Player;
     println!("What is this {:?}?", player1)
     
 }
