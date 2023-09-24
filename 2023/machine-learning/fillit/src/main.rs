@@ -50,20 +50,23 @@ fn main()
 
 
     let lang = String::from("rust");
-    //let rust1 = add_version(&lang); // You can't borrow a string and then mutate it.
-    println!("{:?}", &lang);
+    let rust1 = add_version(&lang); // You can't borrow a string and then mutate it.
+    println!("{:?}", rust1);
     let rust2 = add_lang(&lang);
     println!("{:?}", rust2);
 
     
 }
 
-fn add_version(s: &mut &String) -> String {
-    s.push_str("2021!!");
-    s.to_string() 
+fn add_version(s: &str) -> String {
+    s.to_string() + " 2021."
 }
 
 fn add_lang(s: &String) -> String {
-    s.push_str("lang.");
-    s.to_string()
+    s.to_string() + " lang."
+}
+
+#[test]
+fn test_add_version() {
+   assert_eq!(add_version("abcd"), String::from("abcd 2018."));
 }
