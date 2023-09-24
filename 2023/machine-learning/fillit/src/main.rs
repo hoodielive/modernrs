@@ -37,5 +37,33 @@ fn main()
     } else {
         "hot"
     };
-    println!("{:?}", weather)
+    println!("{:?}", weather);
+
+    let place2 = "himalayas";
+
+    // Same with pattern-matching :: match
+    let weather2 = match place2 {
+        "himalayas" => "cold",
+        _ => "hot",
+    };
+    println!("{:?}, was chosen", weather2);
+
+
+    let lang = String::from("rust");
+    //let rust1 = add_version(&lang); // You can't borrow a string and then mutate it.
+    println!("{:?}", &lang);
+    let rust2 = add_lang(&lang);
+    println!("{:?}", rust2);
+
+    
+}
+
+fn add_version(s: &mut &String) -> String {
+    s.push_str("2021!!");
+    s.to_string() 
+}
+
+fn add_lang(s: &String) -> String {
+    s.push_str("lang.");
+    s.to_string()
 }
