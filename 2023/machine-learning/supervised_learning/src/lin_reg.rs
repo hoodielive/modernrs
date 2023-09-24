@@ -58,6 +58,8 @@ pub fn run() -> Result<(), Box<dyn Error>> {
     println!("Linear regression error: {:?}.", acc);
     println!("Linear regression R2 Score is: {:?}.", r_squared_score(&boston_y_test.data(),
     &predictions.data()));
+
+    Ok(())
 }
 
 
