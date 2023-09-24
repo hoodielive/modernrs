@@ -48,6 +48,16 @@ pub fn run() -> Result<(), Box<dyn Error>> {
     let boston_y_train = Vector::new(boston_y_train);
     let boston_x_test = Matrix::new(test_size, 13, boston_x_test);
     let boston_y_test = Matrix::new(test_size, 1, boston_y_test);
+
+    let mut lin_model = LinRegressor::default();
+    lin_model.train(&boston_x_train, &boston_y_train)?;
+
+    let predictions = lin_model.predict(&boston_x_test).unwrap();
+    let predictions = Matrix::new(test_size, 1, predictions);
+    let acc = neg_mean_squared_error(&predictions, &boston_y_test);
+    println!("Linear regression error: {:?}.", acc);
+    println!("Linear regression R2 Score is: {:?}.", r_squared_score(&boston_y_test.data(),
+    &predictions.data()));
 }
 
 
