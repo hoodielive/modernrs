@@ -1,5 +1,9 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
+#![allow(unsafe_code)]
+
+mod inline_mods;
+mod new_inline_mods;
 
 enum Color
 {
@@ -67,4 +71,6 @@ fn main()
     }
 
     println!("done");
+
+    new_inline_mods:: b
 }
