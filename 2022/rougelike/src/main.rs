@@ -1,6 +1,11 @@
 #![allow(dead_code)]
+<<<<<<< HEAD
+#![allow(unused_variables)]
+#![allow(unused_imports)]
+=======
 #![allow(unused_imports)]
 #![allow(unused_variables)]
+>>>>>>> d7d27a1de515e2f5022070501510affed573de82
 
 use tcod::colors::*;
 use tcod::console::*;
