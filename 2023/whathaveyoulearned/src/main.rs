@@ -1,17 +1,19 @@
 // Component
 #[derive(Debug)]
-struct Player;
+struct Player{
+   active: bool, 
+}
 
 impl Player {
-    fn new(&self) -> Player {
-        &self        
+    fn new() -> Player {
+        Player { active: true }
     }
 
 }
 
 fn main()
 {
-    let player1: Player = Player;
-    println!("What is this {:?}?", player1)
+    let player1: Player = Player { active: false };
+    println!("What is this {:?}?", player1);
     
 }

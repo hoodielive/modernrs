@@ -25,5 +25,6 @@ impl MindTypes
 
 fn main()
 {
-    
+    protocol: MindTypes = MindTypes::new;    
+    println!(protocol);
 }
