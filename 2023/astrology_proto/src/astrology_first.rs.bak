@@ -1,0 +1,20 @@
+use actix_web::{get, web, HttpResponse, Responder};
+use reqwest;
+use serde_json::Value;
+
+#[get("/horoscope/{sign}")]
+async fn horoscope(sign: web::Path<String>) -> impl Responder {
+    let url = format!("https://astrology-api.ganphilosophy.com/horoscope?sign={}", sign);
+    let response: Value = reqwest::get(&url)
+        .await
+        .expect("Failed to fetch API.")
+        .json()
+        .await
+        .expect("Failed to parse JSON.");
+
+    HttpResponse::Ok().json(response)
+}
+
+pub fn init_routes(cfg: &mut web::ServiceConfig) {
+    cfg.service(horoscope);
+}
