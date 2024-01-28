@@ -7,14 +7,14 @@ pub enum Flight{
 
 #[allow(dead_code)]
 pub enum Color {
-    Red,
-    Green,
-    Blue
+    #[allow(dead_code)] Red,
+    #[allow(dead_code)] Green,
+    #[allow(dead_code)] Blue
 }
 
 #[allow(dead_code)]
 pub enum HouseLocation {
-    Number(i32),
-    Name(String),
-    Unknown
+    #[allow(dead_code)] Number(i32),
+    #[allow(dead_code)] Name(String),
+    #[allow(dead_code)] Unknown
 } 
