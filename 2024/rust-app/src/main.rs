@@ -3,7 +3,7 @@
 #[get("/")]
 fn hello() -> &'static str
 {
-    "Howdy"
+    "Howdy, I am saying hello for now()"
 }
 
 #[rocket::main]
