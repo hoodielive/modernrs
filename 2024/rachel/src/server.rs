@@ -39,13 +39,15 @@ impl Server
                 Ok((mut stream, _)) => 
                 {
                     let mut buffer = [0; 1024];
+                    
                     match stream.read(&mut buffer)
                     {
                         Ok(_) => 
                         { 
                             println!("Received a request: {}", String::from_utf8_lossy(&buffer));
                             
-                            //Request::try_from(&buffer as &[u8]);
+                            // Request::try_from(&buffer as &[u8]);
+                            // let resu: &Result<Request, _> = &buffer[..].try_into();
                             
                             match Request::try_from(&buffer[..]) 
                             {
@@ -53,11 +55,12 @@ impl Server
                                 Err(e) => println!("Failed to parse a request: {}", e),
                             };
                             
-                            let resu: &Result<Request, _> = &buffer[..].try_into();
                         },
+                        
                         Err(e) => println!("Failed to read from connection: {}", e),
                     }
                 },
+                
                 Err(e) => println!("Failed to establish a connection: {}", e),
             }
         }
