@@ -1,5 +1,9 @@
 use super::method::Method;
 use std::convert::TryFrom;
+use std::error::Error;
+use std::fmt::Display;
+use std::fmt::Formatter;
+use std::fmt::Result as FmtResult;
 
 pub struct Request
 {
@@ -22,7 +26,7 @@ impl TryFrom<&[u8]> for Request
    fn try_from(value: &[u8]) -> Result<Self, Self::Error> 
    {
        let string = String::from("asd");
-   //    string.encrypt();
+    //    string.encrypt();
     //   buf.encrypt();
        unimplemented!() 
    }
@@ -48,4 +52,34 @@ impl Encrypt for &[u8]
        unimplemented!()
    }
     
+}
+
+pub enum ParseError
+{
+    InvalidRequest, 
+    InvalidEncoding,
+    InvalidProtocol,
+    InvalidMethod,
+}
+
+impl Display for ParseError
+{
+   fn fmt(&self, f: &mut Formatter) -> FmtResult
+   {
+        write!(f, "{}", self.message())
+   }
+}
+
+impl ParseError
+{
+   fn message(&self)->&str
+   {
+       match self
+       {
+            Self::InvalidRequest => "Invalid Request", 
+            Self::InvalidEncoding => "Invalid Encoding",
+            Self::InvalidProtocol => "Invalid Protocol",
+            Self::InvalidMethod => "Invalid Method",
+       }
+   }
 }
