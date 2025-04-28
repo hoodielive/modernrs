@@ -10,7 +10,7 @@ struct Deck
 fn main() 
 {
     let suits = vec!["Hearts", "Spades", "Diamonds", "Clubs"];
-    let values = vec!["Ace", "Two", "Three"];
+    let values = vec!["Ace", "Two", "Three", "Four"];
     let mut cards = vec![];
   
     for suit in suits
@@ -22,7 +22,7 @@ fn main()
         }
     }
     
-    let deck = Deck { cards: vec![ ]};
+    let deck = Deck { cards };
 
-    println!("These are all the cards in the deck: {:?}", deck);
+    println!("These are all the cards in the deck: {:#?}", deck);
 }
