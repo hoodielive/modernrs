@@ -24,6 +24,5 @@ fn main()
   println!("The type of x is: {}", type_of(&_x));
   let _speed = speed(30, 90, 4);
   println!("{} is what all that balls down to.", _speed);
-
   panic!("This is a panic on purpose!");
 }
