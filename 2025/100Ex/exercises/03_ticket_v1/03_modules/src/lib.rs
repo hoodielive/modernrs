@@ -1,12 +1,15 @@
-mod helpers {
+
+pub mod helpers {
+use crate::Ticket;
     // TODO: Make this code compile, either by adding a `use` statement or by using
     //  the appropriate path to refer to the `Ticket` struct.
 
-    fn create_todo_ticket(title: String, description: String) -> Ticket {
+    pub fn create_todo_ticket(title: String, description: String) -> Ticket {
         Ticket::new(title, description, "To-Do".into())
     }
 }
 
+use crate::helpers::*; 
 struct Ticket {
     title: String,
     description: String,
