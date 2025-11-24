@@ -22,13 +22,26 @@ pub mod ticket {
             if status != "To-Do" && status != "In Progress" && status != "Done" {
                 panic!("Only `To-Do`, `In Progress`, and `Done` statuses are allowed");
             }
-
+        
             Ticket {
                 title,
                 description,
                 status,
             }
         }
+        
+        pub fn description(&self) -> &str {
+            &self.description
+        }
+
+        pub fn title(&self) -> &str {
+            &self.title
+        }
+
+        pub fn status(&self) -> &str {
+            &self.status
+        }
+
 
         // TODO: Add three public methods to the `Ticket` struct:
         //  - `title` that returns the `title` field.
