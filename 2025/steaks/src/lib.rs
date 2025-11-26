@@ -21,7 +21,6 @@ fn swim_in_profit() -> String {
     format!("So much $$$, so little time.")
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
